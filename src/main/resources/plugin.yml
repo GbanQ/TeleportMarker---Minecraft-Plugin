@@ -1,0 +1,28 @@
+name: TeleportMarker
+version: '${project.version}'
+main: org.GBanQ.teleportmarker.TeleportMarker
+api-version: '1.20'
+authors: [ G_Ban_Q ]
+description: The Teleport Marker plugin allows players to create temporary teleportation markers that other players can use.
+
+commands:
+  setmark:
+    description: Sets a teleportation marker
+    usage: /setmark <x> <y> <z> <time>
+    aliases: smark
+  gotp:
+    description: Teleports to the active marker
+    usage: /gotp
+  delmark:
+    description: Removes the active teleportation mark
+    usage: /deletemark
+    aliases: dmark
+  tpmhelp:
+    description: Displays help information about the plugin
+permissions:
+  teleportmarker.use:
+    description: Allows the use of all plugin commands
+    default: false
+  teleportmarker.admin:
+    default: op
+
